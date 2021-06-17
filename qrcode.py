@@ -2,7 +2,7 @@ import pyqrcode
 import png
 from pyqrcode import QRCode
 
-QRString = "cesarlp81.github.io"
+QRString = "endereço que quer transformar em QR Code"
 
 url = pyqrcode.create(QRString)
 
