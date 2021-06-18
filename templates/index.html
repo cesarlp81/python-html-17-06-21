@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <form method="POST" action="/inserir">
+        <dl>
+            <dt>Titulo:
+                <dd><input typo='text' size='30' name='titulo'></dd>
+
+            </dt>
+            <dt>Texto:
+                <dd><textarea rows='5' cols='40' name='texto'></textarea></dd>
+                <dd><input type="submit", value="publicar"></dd>
+            </dt>
+        </dl>
+    </form>
+    <ul>
+        {% for entrada in entradas %}
+        <li><h2>{{entrada.titulo}}</h2> <p>{{ entrada.texto}}</p></li>
+       {% else %}
+       <p>ainda nao tem nenhum post!!</p>
+        {% endfor %}
+        
+    </ul>
+
+{% endblock %}
