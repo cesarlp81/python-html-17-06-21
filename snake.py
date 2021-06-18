@@ -1,5 +1,6 @@
 import pygame
 import random
+
 pygame.init()
 preto = (0, 0, 0)
 coral = (252, 117, 54)
